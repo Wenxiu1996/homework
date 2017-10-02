@@ -1,0 +1,25 @@
+public class vehicle{
+      public int needplace;
+	  public  VehicleSize size;
+	  public int getneedplace() {  
+        return needplace;  
+      }  
+      
+      public  VehicleSize getSize() {  
+        return size;  
+      }  
+}
+public class car extends vehicle {  
+    public car() {  
+        needplace = 1;  
+        size = VehicleSize.car;  
+    }  
+      
+    public boolean canFitInSpot(ParkingSpot spot) {  
+        return true;  
+    }  
+      
+    public void print() {  
+        System.out.print("C");  
+    }     
+}  
