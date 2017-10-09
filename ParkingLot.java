@@ -3,7 +3,7 @@ package parking;
 public class ParkingLot {  
 	    private Level[] levels;  
 	    private static int NUM_LEVELS = 5;
-	    private int freeSpaces=0;
+	    private int freeSpaces;
 	    public ParkingLot() {  
 	        levels = new Level[NUM_LEVELS];  
 	        for (int i = 0; i < NUM_LEVELS; i++) {  

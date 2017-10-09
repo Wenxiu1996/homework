@@ -3,7 +3,7 @@ package parking;
 public class Level {
 	private int floor;
 	private ParkingSpot[] spots;
-	private int availableSpots=0;
+	public int availableSpots=0;
 	private static int SPOTSPERROW=10;
 	
 	public Level(int f,int numberSpots) {
@@ -16,7 +16,7 @@ public class Level {
         availableSpots=availableSpots();
         for(int i = 0; i < numberSpots; i++) {
         	V.VehicleSize s=V.VehicleSize.Bike;
-        	if(i < largeSpots){
+        	    if(i < largeSpots){
         		s = V.VehicleSize.Large;  
             } else if (i < largeSpots + compactSpots) {  
             	 s = V.VehicleSize.Compact;  
